@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="Friendship Zone Registration"
+      content="Display the form to enroll yourself"
+    />
+    <title>Frienship Zone Registration</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="../assests/friends.jpeg"
+        alt="friends"
+        width="300"
+        height="250"
+        class="center"
+      />
+      <h1 style="text-align: center">Friendship Zone</h1>
+    </header>
+    <main>
+      <section>
+        <h3>Add your details to register</h3>
+      </section>
+      <section>
+        <form action="./FriendList.html">
+          <label for="name" style="font-weight: bold">Name:</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+          <br />
+          <br />
+          <label for="email" style="font-weight: bold">Email:</label>
+          <input
+            type="email"
+            id="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            required
+          />
+          <br />
+          <br />
+          <label for="age" style="font-weight: bold">Age:</label>
+          <input type="number" min="18" id="age" required />
+          <br />
+          <br />
+          <label for="dateOfBirth" style="font-weight: bold">Birth Day:</label>
+          <input type="date" id="dateOfBirth" required />
+          <br />
+          <br />
+          <label for="gender" style="font-weight: bold">Gender:</label>
+          <input type="radio" name="gender" id="gender" value="Male" />M
+          <input type="radio" name="gender" id="gender" value="Female" />F
+          <br />
+          <br />
+          <label for="about" style="font-weight: bold">About:</label>
+          <textarea
+            name="about"
+            id="about"
+            cols="30"
+            rows="5"
+            required
+          ></textarea>
+          <br />
+          <br />
+          <label for="phone" style="font-weight: 900">Phone:</label>
+          <input type="number" id="phone" required />
+          <br />
+          <br />
+          <label for="interested" style="font-weight: bold"
+            >Interested in:</label
+          >
+          <input
+            type="checkbox"
+            name="ineterested"
+            id="interested"
+            value="Friendship"
+          />Friendship
+          <input
+            type="checkbox"
+            name="interested"
+            id="interested"
+            value="Dating"
+          />Dating
+          <br />
+          <br />
+          <label for="attachment" style="font-weight: bold">Attachment:</label>
+          <input type="file" multiple required />
+          <br />
+          <br />
+          <input type="submit" value="Register" />
+          <a href="./Home.html"
+            ><button type="button">Register as Admin</button></a
+          >
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
